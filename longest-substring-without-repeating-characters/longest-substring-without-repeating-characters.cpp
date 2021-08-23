@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //acquire release strategy
     int lengthOfLongestSubstring(string s) {
         if(s.size()==0)return 0;
         unordered_map<char,int>m;
