@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/8/2021 at 16:33)](https://leetcode.com/problems/all-possible-full-binary-trees/discuss/1442183/Very-Easy-C%2B%2B-(With-Comments))  
 <h2>894. All Possible Full Binary Trees</h2><h3>Medium</h3><hr><div><p>Given an integer <code>n</code>, return <em>a list of all possible <strong>full binary trees</strong> with</em> <code>n</code> <em>nodes</em>. Each node of each tree in the answer must have <code>Node.val == 0</code>.</p>
 
 <p>Each element of the answer is the root node of one possible tree. You may return the final list of trees in <strong>any order</strong>.</p>
