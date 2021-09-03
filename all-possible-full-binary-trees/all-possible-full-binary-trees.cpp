@@ -14,17 +14,18 @@ public:
     
     vector<TreeNode*> allPossibleFBT(int n) {
         if(n==1) return {new TreeNode(0)};
-        if (!n&1) return {};
+        if (!n&1) return {};// returning empty tree for even numbers
         vector<TreeNode*> ans;
-            for(int i=1;i<n;i=i+2){
-            vector<TreeNode*>leftOf=allPossibleFBT(i);
-            vector<TreeNode*>rightOf=allPossibleFBT(n-i-1);
-            for(auto l:leftOf){
-                for(auto r:rightOf){
-                    TreeNode* root=new TreeNode(0);
-                    root->left=l;
-                    root->right=r;
-                    ans.push_back(root);
+        //skipping recursive calls for even numbers
+        for(int i=1;i<n;i=i+2){
+        vector<TreeNode*>leftOf=allPossibleFBT(i);//left sub
+        vector<TreeNode*>rightOf=allPossibleFBT(n-i-1);//right sub
+        for(auto l:leftOf){
+            for(auto r:rightOf){
+                TreeNode* root=new TreeNode(0);
+                root->left=l;
+                root->right=r;
+                ans.push_back(root);
                 }
             }
         }            
