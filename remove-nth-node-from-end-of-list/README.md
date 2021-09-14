@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/8/2021 at 15:25)](https://leetcode.com/problems/remove-nth-node-from-end-of-list/discuss/1462938/C%2B%2B-One-Pass-Easy-Solution)  
 <h2>19. Remove Nth Node From End of List</h2><h3>Medium</h3><hr><div><p>Given the <code>head</code> of a linked list, remove the <code>n<sup>th</sup></code> node from the end of the list and return its head.</p>
 
 <p>&nbsp;</p>
